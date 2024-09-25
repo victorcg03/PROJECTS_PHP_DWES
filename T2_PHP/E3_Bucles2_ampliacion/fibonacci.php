@@ -6,5 +6,5 @@
         }
         return $fibonacci;
     }
-    echo implode(",", fibonacci(9));
+    echo implode(",", fibonacci(12));
 ?>
