@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Formulario para convertir Euros a US Dollars
+    <form action="./E2_conversorDollarEurosRadioBut.php" method="get">
+        <div>
+            <label for="entrada">Cantidad de Euros a convertir: </label>
+            <input type="number" id="entrada" name="entrada">
+        </div>
+        <input type="radio" id="adolar" name="direccion" value="euro" checked="checked">
+        <label for="adolar">Euro a USD</label><br>
+        <input type="radio" id="aeuro" name="direccion" value="dolar">
+        <label for="aeuro">USD a Euro</label><br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
