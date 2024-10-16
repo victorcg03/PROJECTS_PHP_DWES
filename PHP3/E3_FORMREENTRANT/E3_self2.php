@@ -17,15 +17,15 @@
             <form action="./E3_self2.php" method="POST">
                 <div>
                     <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre">
+                    <input type="text" name="nombre" id="nombre" value="<?= isset($_POST['nombre']) ? $_POST['nombre'] :''?>">
                 </div>
                 <div>
                     <label for="empresa">Empresa</label>
-                    <input type="text" name="empresa" id="empresa">
+                    <input type="text" name="empresa" id="empresa" value="<?= isset($_POST['empresa']) ? $_POST['empresa'] :''?>">
                 </div>
                 <div>
                     <label for="telefono">Telefono</label>
-                    <input type="text" name="telefono" id="telefono" value="+34">
+                    <input type="text" name="telefono" id="telefono" value="<?= !empty($_POST['telefono']) ? $_POST['telefono'] :'+34'?>">
                 </div>
                 <button type="submit">Enviar</button>
             </form>
