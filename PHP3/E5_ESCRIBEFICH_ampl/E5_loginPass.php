@@ -16,7 +16,7 @@
         if (!$ficheroAbierto) {
             echo "Ha habido un error al abrir el fichero, no se continuará<br>";
         }else{
-            if (!fwrite($ficheroAbierto, $login."\t".$password)) {
+            if (!fwrite($ficheroAbierto, $login."\t".$password."\n")) {
                 echo "Ha habido un error al escribir en el archivo.";
             } else {
                 echo "Se ha guardado correctamente el usuario " . $login . " y la password " . $password;
