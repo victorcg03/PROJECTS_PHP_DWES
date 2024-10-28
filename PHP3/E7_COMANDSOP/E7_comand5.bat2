@@ -1,0 +1,7 @@
+@echo off
+echo FECHA DE HOY:
+date /t
+@echo.
+echo LISTADO DE LA CARPETA ACTUAL:
+@echo on
+dir /w

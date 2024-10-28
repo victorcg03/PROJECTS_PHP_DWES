@@ -1,0 +1,4 @@
+echo FECHA:
+date
+echo LISTADO DE LA CARPETA ACTUAL:
+ls -l
