@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1A1B1E;
+    color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #f2f2f2;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    background-color: #2C2F33;
+    padding: 50px; /* Más espacio interno */
+    border-radius: 12px;
+    width: 100%;
+    max-width: 700px; /* Ancho máximo aumentado */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: left; /* Alinea los labels a la izquierda */
+    color: #c4c4c4;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="tel"]{
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #3A3D42;
+    color: #f2f2f2;
+    font-size: 16px;
+    transition: background-color 0.2s, border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus,
+input[type="tel"]:focus {
+    background-color: #44484d;
+    border-color: #5a9bd4;
+    outline: none;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.03);
+}
+#volver{
+    color: #fff;
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+    background-color: #2C2F33;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+#volver:hover{
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+.mensaje{
+    font-size: 15px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+#error{
+    color: red;
+}
+#success{
+    color: green;
+}

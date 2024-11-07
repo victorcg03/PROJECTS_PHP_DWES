@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    background-color: #1A1B1E;
+    color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    color: #f2f2f2;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+a {
+    display: inline-block;
+    width: 240px;
+    padding: 10px 0;
+    color: #fff;
+    background-color: #3498db;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+a:hover {
+    transform: scale(1.06);
+}
+
+#desaparecidos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 0.4fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    place-content: center;
+}
+
+.desaparecido {
+    background-color: #2C2F33;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desaparecido:hover {
+    transform: scale(1.03);
+}
+
+.foto {
+    width: 80%; /* La imagen ocupa el 80% del ancho de la tarjeta */
+    height: 250px; /* Ajusta la altura de la imagen */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px; /* Bordes redondeados para que se vea "encajada" */
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+.nombre, .apellidos, .ubicacion, .tlf {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 16px;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+/* Color para destacar el nombre */
+.nombre {
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Ajustes específicos para el teléfono */
+.tlf {
+    color: #9bd3f0; /* Color distintivo para el teléfono */
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 5px; /* Margen superior adicional para separación */
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    a {
+        width: 100%;
+        font-size: 16px;
+    }
+}
