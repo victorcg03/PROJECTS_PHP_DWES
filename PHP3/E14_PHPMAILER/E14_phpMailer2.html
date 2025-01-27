@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="./E14_phpMailer2.php" method="post">
+    <h1>Formulario Envío Correo</h1>
+    <div>
+      <label for="destinatario">Correo destinatario</label>.
+      <input type="email" name="destinatario" id="destinatario">
+    </div>
+    <div>
+      <label for="asunto">Asunto:</label>
+      <input type="text" name="asunto" id="asunto">
+    </div>
+    <div style="display: flex; flex-direction: column;">
+      <label for="mensaje">Mensaje</label>
+      <textarea name="mensaje" id="mensaje" cols="10" rows="10" style="width: 300px;"></textarea>
+    </div>
+    <button>Enviar</button>
+  </form>
+</body>
+</html>
