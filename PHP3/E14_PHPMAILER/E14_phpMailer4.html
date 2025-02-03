@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Document</title>
+</head>
+<body>
+  <form action="./E14_phpMailer4.php" method="post" enctype="multipart/form-data">
+    <h1>Formulario Envío Correo</h1>
+    <div>
+      <label for="destinatario">Correo destinatario</label>.
+      <input type="email" name="destinatario" id="destinatario">
+    </div>
+    <div>
+      <label for="asunto">Asunto:</label>
+      <input type="text" name="asunto" id="asunto">
+    </div>
+    <div>
+      <label for="mensaje">Mensaje</label><br>
+      <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+      <label for="archivo">Archivos Adjuntos:</label> <br>
+      <input type="file" name="archivos[]" id="archivos" multiple>
+    </div>
+    <button>Enviar</button>
+  </form>
+</body>
+</html>
