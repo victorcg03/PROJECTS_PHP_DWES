@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Parseando un array asociativo JSON</h2>
+  <p></p>
+  <script>
+    const jsonText = `[
+      {"name":"John", "age":30, "city":"New York"},
+      {"name":"John2", "age":40, "city":"Illinois"}
+    ]`;
+    const people = JSON.parse(jsonText);
+    let salida = "";
+    for (let i = 0; i < people.length; i++) {
+      salida += `Nombre: ${people[i].name}, Edad: ${people[i].age}, Ciudad: ${people[i].city}<br>`;
+    }
+    document.querySelector('p').innerHTML = salida;
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Parseando un array JSON</h2>
+  <p></p>
+  <script>
+    const text = '["Ford", "BMW", "Audi", "Fiat"]';
+    const arr = JSON.parse(text);
+    let output = "";
+    for (let i = 0; i < arr.length; i++) {
+      output += arr[i] + "<br>";
+    }
+    document.querySelector('p').innerHTML = output;
+  </script>
+</body>
+</html>

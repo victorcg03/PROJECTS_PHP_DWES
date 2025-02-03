@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function filtra(str){
+      if (str.length == 0) {
+        document.getElementById("resultado").innerHTML = "";  
+      } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function(){
+          if (this.readyState == 4 && this.status == 200){
+            document.getElementById("resultado").innerHTML = this.responseText;
+          }
+        };
+        xmlhttp.open("GET", "ajax_arrayDatos.php?q=" + str, true);
+        xmlhttp.send();
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="conainer">
+    <form action="" method="get">
+      Buscar por nombre:
+      <input type="text" onkeyup="filtra(this.value)">
+    </form>
+    <br><br>
+    <b>Resultaos de la Busqueda:</b>
+    <br><br>
+    <span id="resultado"></span>
+  </div>
+</body>
+</html>

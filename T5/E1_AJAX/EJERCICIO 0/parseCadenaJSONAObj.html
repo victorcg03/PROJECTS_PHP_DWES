@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Creando cadena de un objeto desde un JSON</h2>
+  <p></p>
+  <script>
+    const txt = '{"name":"John", "age":30, "city":"New York"}';
+    const obj = JSON.parse(txt);
+    document.querySelector('p').innerHTML = obj.name + ", " + obj.age + ", " + obj.city;
+  </script>
+</body>
+</html>
