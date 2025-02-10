@@ -12,7 +12,7 @@ use PHPMailer\PHPMailer\Exception;
     $mail->isSMTP();
       $mail->Host = 'smtp.ionos.es';
       $mail->SMTPAuth = true;
-      $mail->Username = '';
+                          $mail->Username = '';
       $mail->Password = '';
       $mail->SMTPSecure = 'tls';
       $mail->Port = 587;
